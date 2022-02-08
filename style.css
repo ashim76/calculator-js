@@ -1,0 +1,151 @@
+body {
+    background: linear-gradient(to left, rgb(112, 18, 18), rgb(168, 143, 2));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.wrapper h1 {
+    font-family: 'DotGothic16', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.mainParent {
+    width: 350px;
+    background: linear-gradient(to right, purple, gold);
+    /* margin-top: 5rem; */
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -4px 10px 4px rgba(0, 0, 0, 0.5);
+}
+
+.result {
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: -4px 10px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+    background: rgba(179, 54, 54, 0.11);
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.items {
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    grid-template-areas: "clear clean divide multi" "no7 no8 no9 plus" "no4 no5 no6 minus " "no3 no2 no1 ans" "dot no0 no0 ans";
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.clean {
+    grid-area: clean;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.multi {
+    grid-area: multi;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.no-7 {
+    grid-area: no7;
+}
+
+.no-8 {
+    grid-area: no8;
+}
+
+.no-9 {
+    grid-area: no9;
+}
+
+.no-6 {
+    grid-area: no6;
+}
+
+.no-5 {
+    grid-area: no5;
+}
+
+.no-4 {
+    grid-area: no4;
+}
+
+.no-3 {
+    grid-area: no3;
+}
+
+.no-2 {
+    grid-area: no2;
+}
+
+.no-1 {
+    grid-area: no1;
+}
+
+.no-0 {
+    grid-area: no0;
+}
+
+.dot {
+    grid-area: dot;
+}
+
+.ans {
+    grid-area: ans;
+}
+
+.items>button {
+    background: rgba(161, 118, 26, 0.349);
+    color: white;
+    min-height: 50px;
+    border: 1px solid (0, 0, 0, 0.15);
+    box-shadow: -4px 10px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.items>button:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+.prank {
+    animation: shake 0.3 ease-in;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
